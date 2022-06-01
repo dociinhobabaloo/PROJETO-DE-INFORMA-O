@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt; plt.rcdefaults()
+import numpy as np
+
+jogos = ('GTA V', 'God of War', 'Uncharted 4,'Spider Man','The Witcher 3')
+indice = np.arange(len(jogos))
+vendas = [24,19,5,16,13,2,10,8]
+
+plt.bar(indice, vendas, color='blue')
+plt.bar(indice, vendas)
+plt.xticks(indice,jogos)
+plt.ylabel('Vendas em milhões')
+plt.title('Os cinco jogos mais vendidos Ps4')
+
+plt.show() 
